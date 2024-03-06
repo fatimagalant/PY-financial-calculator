@@ -2,12 +2,18 @@ import math
 
 class Financial_Calculator: 
     invest_or_bond = input(str(
-        '''====================
+        '''
+        <->==========================================================<->
+        
         Choose either investment or bond from the menu below to proceed:
-          - [ investment ]
-          - [ bond ] 
-          ================''')).lower()
-    if invest_or_bond == "investment":
+        
+        ----------------------------------------------------------------
+        
+          1 - [ investment ]
+          2 - [ bond ] 
+          
+        <->==========================================================<->''')).lower()
+    if invest_or_bond == "1":
         if True:
             p = float(input("How much are you depositing ?\nR"))
             r = float(input("At which interest rate percentile ? \n" ))
@@ -28,7 +34,7 @@ class Financial_Calculator:
                 print(f"Your interest earned over {t} years will be R{total:.2f}".format())
                 print(f"Your total amount earned over {t} years will be R{total+p:.2f}".format())
                 
-    elif invest_or_bond == "bond":
+    elif invest_or_bond == "2":
         if True:
             p = float(input("What is the current value of the house ?\nR"))
             i = float(input("At which interest rate percentile ?\n"))
