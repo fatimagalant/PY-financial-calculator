@@ -12,7 +12,9 @@ class Financial_Calculator:
           1 - [ investment ]
           2 - [ bond ] 
           
-        <->==========================================================<->''')).lower()
+        <->==========================================================<->
+             
+             ''')).lower()
     if invest_or_bond == "1":
         if True:
             p = float(input("How much are you depositing ?\nR"))
